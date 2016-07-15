@@ -1,0 +1,17 @@
+log4j.logger.debuginfo=DEBUG, fw
+log4j.appender.fw=org.apache.log4j.FileAppender
+log4j.appender.fw.File=/opt/record_redis/debuginfo.log
+log4j.appender.fw.layout=org.apache.log4j.PatternLayout
+log4j.appender.fw.layout.ConversionPattern=%d %-5p %m%n
+
+log4j.logger.keyloginfo=DEBUG, fi
+log4j.appender.fi=org.apache.log4j.FileAppender
+log4j.appender.fi.File=/opt/keylog/KeyLog.info
+log4j.appender.fi.layout=org.apache.log4j.PatternLayout
+log4j.appender.fi.layout.ConversionPattern=%d %-5p %m%n
+
+log4j.logger.keytypeinfo=DEBUG, fc
+log4j.appender.fc=org.apache.log4j.FileAppender
+log4j.appender.fc.File=/opt/keylog/KeyType.info
+log4j.appender.fc.layout=org.apache.log4j.PatternLayout
+log4j.appender.fc.layout.ConversionPattern=%d %-5p %m%n
